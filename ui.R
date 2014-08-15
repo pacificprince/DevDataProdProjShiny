@@ -52,7 +52,8 @@ shinyUI(
                          p(strong("Minimum Average API:"), "A slider control for selecting the minimum 
                            average API to consider. Values below this are ignored/filtered."),
                          p(strong("Groups to Compare:"), "Checkboxes to select groups to compare. Multiple 
-                           groups can be selected at the same time."),
+                           groups can be selected at the same time.", em("At least one box must be
+                           checked for the application to work!.")),
                          p(strong("Filter by County:"), "Drop down list containing various counties in CA 
                            across which the comparison is desired."),
                          p(strong("Split by Charter:"),"Radio buttons to determine if output plot should be 
