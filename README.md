@@ -34,29 +34,35 @@ The goal of this project was to write an Shiny application that demonstrate's so
 
 The interface to the Shiny application is shown in the figure below. The application allows for quickly viewing and comparing APIs by race, county and charter funding. The left side contains input controls (user selection). The output on the right is a bar plot comparing the three year weighted average API as per the selections.
 
+The user interface consists of the following controls:
+1. Two tabs:
+	- **About**: Gives a quick overview of how to use the application.
+	- **App**: This is the ShinyApp interface shown below.
 
+1. **Minimum Average API**: A slider control for selecting the minimum average API to consider. Values below this are ignored/filtered.
 
-The user input section consists of the following controls:
+2. **Groups to Compare**: Checkboxes to select groups to compare. Multiple groups can be selected at the same time.
 
-- **Minimum Average API**: A slider control for selecting the minimum average API to consider. Values below this are ignored/filtered.
+3. **Filter by County**: Drop down list containing various counties in CA across which the comparison is desired.
 
-- **Groups to Compare**: Checkboxes to select groups to compare. Multiple groups can be selected at the same time.
-
-- **Filter by County**: Drop down list containing various counties in CA across which the comparison is desired.
-
-- **Split by Charter**: Radio buttons to determine if output plot should be split by schools according to charter funding.
-
+4. **Split by Charter**: Radio buttons to determine if output plot should be split by schools according to charter funding.
 
 
 Based on these user inputs the API is calculated and filtered by `server.R` and displayed as a (reactive) barplot.
 
-
-
-![ShinyApp Interface](shinyapp_interface.png)
+![ShinyApp Interface](how_to_use.png)
 
 
 
 ## Slidify: Reproducible Pitch Presentation
 
 The slidify presentation is available at [here](http://pacificprince.github.io/DevDataProdProjSlidify/presentation.html).
+
+## Github repos / gh-pages:
+- Shiny: 
+  - App: http://pacificprince.shinyapps.io/Shiny/
+  - Github: https://github.com/pacificprince/DevDataProdProjShiny
+- Slidify: 
+  - Github: https://github.com/pacificprince/DevDataProdProjSlidify
+  - gh-page: http://pacificprince.github.io/DevDataProdProjSlidify/presentation.html
 
